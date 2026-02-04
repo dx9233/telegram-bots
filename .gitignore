@@ -1,0 +1,45 @@
+# Basic exceptions
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+*.log
+
+# Monorepo structure
+# We exclude individual bot settings, but leave the structure
+/*/.env
+/*/local_settings.py
+/*/__pycache__/
+/*/*.pyc
+
+# But we keep the general settings
+!/shared/
+
+# Docker
+*.dockerignore
+docker-compose.override.yml
+
+# Configs for different environments
+config/
+configs/
+configs/local/
+configs/dev/
+configs/prod/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Migration Data Base
+alembic/versions/*_temp.py
+
+# Test data
+test_data/
+fixtures/
+*.test.db
+
+# Session files
+*.session

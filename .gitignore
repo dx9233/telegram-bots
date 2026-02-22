@@ -1,45 +1,96 @@
-# Basic exceptions
-__pycache__/
-*.pyc
-.venv/
-venv/
-.env
+# Общие системные файлы
+.DS_Store
+Thumbs.db
 *.log
 
-# Monorepo structure
-# We exclude individual bot settings, but leave the structure
-/*/.env
-/*/local_settings.py
-/*/__pycache__/
-/*/*.pyc
+# Файлы IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-# But we keep the general settings
-!/shared/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Docker
-*.dockerignore
-docker-compose.override.yml
+# PyInstaller
+*.manifest
+*.spec
 
-# Configs for different environments
-config/
-configs/
-configs/local/
-configs/dev/
-configs/prod/
+# Virtual environments
+venv/
+.env/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
 
-# Temporary files
-tmp/
-temp/
-*.tmp
-*.temp
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
 
-# Migration Data Base
-alembic/versions/*_temp.py
+# Pyre type checker
+.pyre/
 
-# Test data
-test_data/
-fixtures/
-*.test.db
+# Jupyter Notebook
+.ipynb_checkpoints
 
-# Session files
-*.session
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# Security
+secrets.py
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+config.yaml
+config.yml
+credentials.json
+*.pem
+*.key
+*.crt
+
+# Bots
+token.txt
+bot_token.txt
+*.db
+database.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs/
+*.log
+logfile.txt
+
+# Cashe
+.cache/

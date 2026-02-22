@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart House | Landing Page</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+   <section class="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <h1>New Automation Tool for Your</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn">See Our Project</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="{% static '../static/img/hero-image.png' %}" alt="Hero">
+        </div>
+    </div>
+</section>
+
+
+<section class="services">
+    <div class="container">
+
+        <h2 class="section-title">
+            What we do to help our client grow in digital era
+        </h2>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <img src="{% static '../static/svg/service_1.svg' %}">
+                <h3>Make Your business To Be Better Famous</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div class="service-card">
+                <img src="{% static '../static/svg/service_2.svg' %}">
+                <h3>Bring Technology To Your Comfortable Home</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div class="service-card">
+                <img src="{% static '../static/svg/service_3.svg' %}">
+                <h3>Build Your Digital Product</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="projects">
+
+    <div class="container">
+
+        <h2>Our Finished Project</h2>
+
+        <p class="projects-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+
+        <div class="projects-grid">
+
+     
+            <div class="project-big"
+                 style="background-image: url('{% static "../static/img/smart-home.png" %}')">
+
+                <h3>Smart Home Installation</h3>
+            </div>
+          
+            <div class="project-small"
+                 style="background-image: url('{% static "../static/img/sparklite-app.png" %}')">
+
+                <h3>Sparklite App</h3>
+            </div>
+
+            <div class="project-small"
+                 style="background-image: url('{% static "../static/img/car-repetition.png" %}')">
+
+                <h3>Car-Repetition App</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <div class="container">
+
+        <!-- TOP -->
+
+        <div class="footer-top">
+
+            <div class="footer-info">
+
+                <h2>Interested to work with our team?</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt.
+                </p>
+
+            </div>
+
+            <a href="#" class="footer-btn">
+                Let's Talk
+            </a>
+
+        </div>
+
+
+        <hr>
+
+
+        <!-- BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <div class="footer-item">
+                <span>1.</span>
+                Lorem ipsum dolor sit amet.
+            </div>
+
+            <div class="footer-item">
+                <span>2.</span>
+                +7-812-7313-4321
+            </div>
+
+            <div class="footer-item">
+                <span>3.</span>
+                hello.site@gmail.com
+            </div>
+
+        </div>
+
+
+        <div class="footer-copy">
+            1t Sprint 2022 — All rights reserved ©
+        </div>
+
+    </div>
+
+</footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>

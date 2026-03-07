@@ -13,36 +13,36 @@ bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
 
-# Старт
+# Start
 @dp.message(CommandStart())
 async def start(message: Message):
     await message.answer(
-        "💪 Добро пожаловать в фитнес-бот!\nВыберите действие:",
+        "Welcome To Fitness Bot!\nChoose The Action:",
         reply_markup=kb.main_menu
     )
 
 
-# Купить абонемент
-@dp.message(F.text == "🏋️ Купить абонемент")
+# Buy Plan
+@dp.message(F.text == "Buy Aboniment")
 async def buy(message: Message):
     await message.answer(
-        "Выберите тариф:",
+        "Choose The Plan:",
         reply_markup=kb.tariffs_menu
     )
 
 
-# Тарифы
+# Plans
 @dp.message(F.text.contains("месяц"))
 async def tariff(message: Message):
     await message.answer(
-        "✅ Отличный выбор!\n\n"
-        "Для оформления напишите:\n"
-        "Имя и телефон через пробел\n\n"
-        "Пример: Иван +79991234567"
+        "Successfull!!\n\n"
+        "For order write:\n"
+        "First Name and Last Name\n\n"
+        "Example: John +79991234567"
     )
 
 
-# Запись клиента
+# Recording Client
 @dp.message(F.text.regexp(r".+\s\+7\d{10}"))
 async def register(message: Message):
 
@@ -57,23 +57,23 @@ async def register(message: Message):
     )
 
     await message.answer(
-        "🎉 Заявка принята!\nТренер свяжется с вами."
+        "Order Successfull!\nThe coach will contact you."
     )
 
 
 # Поддержка
-@dp.message(F.text == "📞 Поддержка")
+@dp.message(F.text == "Support")
 async def support(message: Message):
     await message.answer(
-        "📩 Напишите: @your_manager"
+        "Write: @your_manager"
     )
 
 
 # Назад
-@dp.message(F.text == "⬅️ Назад")
+@dp.message(F.text == "Back")
 async def back(message: Message):
     await message.answer(
-        "Главное меню:",
+        "Home:",
         reply_markup=kb.main_menu
     )
 
